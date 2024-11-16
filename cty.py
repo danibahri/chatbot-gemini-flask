@@ -4,11 +4,11 @@ import requests
 app = Flask(__name__)
 
 # Facebook WhatsApp Business API credentials
-WHATSAPP_API_URL = 'https://graph.facebook.com/v21.0/457860314085873/messages'  # Ganti dengan Phone Number ID Anda
-ACCESS_TOKEN = 'EAAGWbVguzsMBO1xah7fsrrDNpE7GiE74BSaSQR1XDC0zDusnsVUGbMWa3q19BxdXEiN4rckYCSeuwodC4xdeWg7oV5ZC1ntMA8MZB9Ohfr0P46NxNolftM4U8rG5ZAPoL2Fvh91VCxQ13ie89kql45Qo4TIaOrnii1WxKbojsKbr8pK7fNXjPDb031dkssxEB5dbkj8R2uaAFmRJUxqLjc8uKUZD'  # Ganti dengan Facebook Access Token Anda
+WHATSAPP_API_URL = 'https://graph.facebook.com/v21.0//messages'  # Ganti dengan Phone Number ID Anda
+ACCESS_TOKEN = ''  # Ganti dengan Facebook Access Token Anda
 
 # Gemini API key
-GEMINI_API_KEY = 'AIzaSyDWhbF2IaIvoSQ4RambSH_TYxifNBBq6TM'  # Ganti dengan Gemini API Key Anda
+GEMINI_API_KEY = ''  # Ganti dengan Gemini API Key Anda
 
 def query_gemini(prompt):
     url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateText"
